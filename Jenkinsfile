@@ -8,7 +8,7 @@ pipeline {
 
         stage('execution') {
             steps {
-                sh 'npm run saludo.js'
+                sh 'node saludo.js ${persona_a_saludar}'
             }
         }
     }
